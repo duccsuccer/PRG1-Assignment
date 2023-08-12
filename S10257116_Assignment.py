@@ -52,7 +52,7 @@ def disp():
 # Option 1
 def disp_tot_cpks(total_cpk):
     print("Option 1: Display Total Number of Carparks in 'carpark-information.csv'")
-    print(total_cpk)
+    print(f"Total Number of carparks in 'carpark-information.csv': {total_cpk}.")
 
 # Option 2
 def disp_all_basement_cpks(carpk_dict, cpk_list):
@@ -111,7 +111,7 @@ def read_av_file(filename):
 
 # Option 4
 def tot_cpks(counts):
-    print(counts)
+    print(f"Total number of carparks in the file: {counts}")
 
 # Option 5
 def not_av_cpks(av_dict, av_list, count2):
@@ -119,7 +119,7 @@ def not_av_cpks(av_dict, av_list, count2):
         if int(av_dict["Lots Available"]) == 0: # Check for full parking lots
             print(f'Carpark Number: {av_dict["Carpark Number"]}')
             count2 += 1 # carpark counter
-    print(count2)
+    print(f"Total number: {count2}")
 
 # Option 6
 def x_percent(av_dict, av_list, count2):
